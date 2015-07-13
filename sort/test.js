@@ -24,7 +24,7 @@ describe('sort', function() {
       arr.push(Math.random());
     }
     nativeSortCalled = false;
-    sorted = sort(arr);
+    var sorted = sort(arr);
     var lastNumber = sorted[0];
     for (i = 1; i < 10000; i++) {
       if (lastNumber > sorted[i]) {
